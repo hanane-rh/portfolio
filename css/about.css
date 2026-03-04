@@ -177,7 +177,6 @@
 }
 .orbit-scene {
     position: relative;
-    /* fluid: shrinks on small screens, caps at 420px */
     width: min(420px, 90vw);
     height: min(420px, 90vw);
     flex-shrink: 0;
@@ -256,6 +255,54 @@
     text-transform: uppercase;
     color: rgba(255,255,255,0.36);
     white-space: nowrap;
+}
+
+/* ── Mobile: replace orbit with a pill grid ── */
+@media (max-width: 600px) {
+    .orbit-wrapper {
+        padding: 0.5rem 0 0;
+    }
+
+    /* hide the whole canvas-based orbit scene */
+    .orbit-scene {
+        display: none;
+    }
+
+    /* show the fallback grid (injected by JS or already in HTML as hidden) */
+    .stack-grid-mobile {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.7rem;
+        width: 100%;
+    }
+
+    .stack-pill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        padding: 0.85rem 0.4rem;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(255,255,255,0.06);
+        transition: border-color 0.3s ease, background 0.3s ease;
+    }
+    .stack-pill:hover {
+        border-color: rgba(102,49,88,0.45);
+        background: rgba(102,49,88,0.07);
+    }
+    .stack-pill i {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    .stack-pill span {
+        font-size: 0.5rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+        white-space: nowrap;
+    }
 }
 
 /* ============================================
