@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hanane Rahali </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-mini">
+            <a href="home.html" class="mini-icon active">
+                <i class="fas fa-home"></i>
+                <span class="tooltip">HOME</span>
+            </a>
+            <a href="about.html" class="mini-icon">
+                <i class="fas fa-user"></i>
+                <span class="tooltip">ABOUT</span>
+            </a>
+             <a href="projects.html" class="mini-icon">
+                <i class="fas fa-briefcase"></i>
+                <span class="tooltip">PROJECTS</span>
+            </a>
+            <a href="contact.html" class="mini-icon">
+                <i class="fas fa-envelope"></i>
+                <span class="tooltip">CONTACT</span>
+            </a>
+        </div>
+
+        <div class="sidebar-card">
+            <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+            <p class="subtitle">Software Engineering</p>
+            <h2>Rahali Hanane</h2>
+            <div class="social-icons">
+                <!-- ✏️ Replace YOUR-USERNAME with your LinkedIn username -->
+                <a href="https://www.linkedin.com/in/hanane-rahali" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- ✏️ Replace YOUR-USERNAME with your Instagram username -->
+                <a href="https://www.instagram.com/ha.nane.rahali" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- ✏️ Replace YOUR-USERNAME with your GitHub username -->
+                <a href="https://github.com/hanane-rh" target="_blank"><i class="fab fa-github"></i></a>
+               
+            </div>
+            <div class="card-buttons">
+                <!-- ✏️ Put your CV PDF in assets/cv/ and replace the filename below -->
+                <a href="https://drive.google.com/file/d/1fJXOmeeDNp6Z4bnORJCHUa7g5O-v3Ftn/view" target="_blank" class="btn-primary">Download CV</a>
+                <a href="contact.html" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SCROLLABLE PANEL -->
+    <div class="main-content" id="mainContent">
+        <div class="content-card">
+
+            <!-- ── HERO INTRO ── -->
+            <div class="hero-intro">
+
+                <span class="hero-badge" id="heroBadge">
+                    <span class="dot"></span>
+                    Software Engineering
+                </span>
+
+                <h1 class="hero-title">
+                    <span id="typedText"></span><span class="cursor" id="cursor"></span>
+                </h1>
+
+                <div class="hero-divider" id="heroDivider"></div>
+
+                <p class="hero-description" id="heroDesc"></p>
+
+            </div>
+
+            <!-- separator -->
+            <div class="section-separator"></div>
+
+            <!-- ── SERVICES ── -->
+            <div class="services-section">
+
+                <div class="services-header" id="servicesHeader">
+                    <p class="services-label">What I do</p>
+                    <h2 class="services-title">My <span>Services</span></h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-item" id="srv1">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <div class="service-body">
+                            <p class="service-name">
+                                <span class="service-num">01</span>
+                                Database Design & Management
+                            </p>
+                            <p class="service-desc">
+                                Relational modeling, SQL query optimisation, and robust schema design with PostgreSQL. Every database structure is crafted for performance, integrity, and long-term scalability.
+                            </p>
+                        </div>
+                        <span class="service-arrow">→</span>
+                    </div>
+
+                    <div class="service-item" id="srv2">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <div class="service-body">
+                            <p class="service-name">
+                                <span class="service-num">02</span>
+                                Backend Development & API
+                            </p>
+                            <p class="service-desc">
+                                Building secure, well-structured RESTful APIs with Django, Spring Boot, or Prisma. JWT authentication, role-based access control, and clean architecture designed to scale without friction.
+                            </p>
+                        </div>
+                        <span class="service-arrow">→</span>
+                    </div>
+
+                    <div class="service-item" id="srv3">
+                        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="service-body">
+                            <p class="service-name">
+                                <span class="service-num">03</span>
+                                Modern User Interfaces
+                            </p>
+                            <p class="service-desc">
+                                Designing and building responsive, accessible, and polished interfaces with React. From layout to the final pixel — every detail is considered to deliver a smooth and memorable user experience.
+                            </p>
+                        </div>
+                        <span class="service-arrow">→</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-cta" id="heroCta">
+                    <a href="about.html" class="btn-text-link">
+                        Get to know me <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-bottom-pad"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

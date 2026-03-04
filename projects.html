@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Hanane</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-mini">
+            <a href="home.html" class="mini-icon">
+                <i class="fas fa-home"></i>
+                <span class="tooltip">HOME</span>
+            </a>
+            <a href="about.html" class="mini-icon">
+                <i class="fas fa-user"></i>
+                <span class="tooltip">ABOUT</span>
+            </a>
+             <a href="projects.html" class="mini-icon active">
+                <i class="fas fa-briefcase"></i>
+                <span class="tooltip">PROJECTS</span>
+            </a>
+            <a href="contact.html" class="mini-icon">
+                <i class="fas fa-envelope"></i>
+                <span class="tooltip">CONTACT</span>
+            </a>
+        </div>
+
+         <div class="sidebar-card">
+             <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+            <p class="subtitle">Software Engineering</p>
+            <h2>Rahali Hanane</h2>
+            <div class="social-icons">
+                <!-- ✏️ Replace YOUR-USERNAME with your LinkedIn username -->
+                <a href="https://www.linkedin.com/in/hanane-rahali" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- ✏️ Replace YOUR-USERNAME with your Instagram username -->
+                <a href="https://www.instagram.com/ha.nane.rahali" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- ✏️ Replace YOUR-USERNAME with your GitHub username -->
+                <a href="https://github.com/hanane-rh" target="_blank"><i class="fab fa-github"></i></a>
+               
+            </div>
+            <div class="card-buttons">
+                <!-- ✏️ Put your CV PDF in assets/cv/ and replace the filename below -->
+                <a href="https://drive.google.com/file/d/1fJXOmeeDNp6Z4bnORJCHUa7g5O-v3Ftn/view" target="_blank" class="btn-primary">Download CV</a>
+                <a href="contact.html" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-content" id="mainContent">
+        <div class="content-card">
+
+            <div class="page-header">
+                <p class="sec-label">My work</p>
+                <h1>Selected <span>Projects</span></h1>
+                <p>A curated selection of what I've built — from full-stack web applications to polished interfaces.</p>
+            </div>
+
+            <div class="projects-list">
+
+                <!-- ── PROJECT 1: Hotel Desk ── -->
+                <div class="project-row flip" id="proj1">
+                    <span class="proj-index">01</span>
+                    <div class="proj-image-wrap">
+                        <img src="assets/images/photelD.png" alt="Hotel Desk">
+                    </div>
+                    <div class="proj-content">
+                        <span class="proj-num">01</span>
+                        <h2 class="proj-title">Hotel Desk</h2>
+                        <p class="proj-desc">A hotel management system built to showcase the full power of Prisma ORM and its capabilities. Covers reservation management, room tracking, guest check-in/out, and admin operations — with a clean interface for front-desk staff.</p>
+                        <div class="proj-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Prisma</span>
+                            <span class="proj-tag">NestJS</span>
+                            <span class="proj-tag">PostgreSQL</span>
+                        </div>
+                        <div class="proj-actions">
+                            <button class="btn-view" id="openBtn2">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="https://github.com/nahla-k/Hotel-management-system.git" target="_blank" class="btn-ghost">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 2: Biblioteka ── -->
+                <div class="project-row" id="proj2">
+                    <span class="proj-index">02</span>
+                    <div class="proj-image-wrap">
+                        <img src="assets/images/biblioteka.png" alt="Biblioteka">
+                    </div>
+                    <div class="proj-content">
+                        <span class="proj-num">02</span>
+                        <h2 class="proj-title">Biblioteka</h2>
+                        <p class="proj-desc">An online bookstore where users can discover, browse by category, manage a cart, choose between in-store pickup or delivery, and pay with various methods. A full e-commerce experience tailored for book lovers.</p>
+                        <div class="proj-tags">
+                            <span class="proj-tag">Django</span>
+                            <span class="proj-tag">React</span>
+                        </div>
+                        <div class="proj-actions">
+                            <button class="btn-view" id="openBtn3">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="https://github.com/hanane-rh/shopProjet.git" target="_blank" class="btn-ghost">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 3: Vio ── -->
+                <div class="project-row" id="proj3">
+                    <span class="proj-index">03</span>
+                    <div class="proj-image-wrap">
+                        <img src="assets/images/vio.png" alt="Vio">
+                    </div>
+                    <div class="proj-content">
+                        <span class="proj-num">03</span>
+                        <h2 class="proj-title">Vio</h2>
+                        <p class="proj-desc">A long-term health tracking application with a gamification twist. Helps users manage chronic conditions through daily tasks, routines, motivational reminders, and progress rewards — making health follow-up engaging and consistent.</p>
+                        <div class="proj-tags">
+                            <span class="proj-tag">Django</span>
+                            <span class="proj-tag">React</span>
+                        </div>
+                        <div class="proj-actions">
+                            <button class="btn-view" id="openBtn4">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="https://github.com/hanane-rh/vio.git" target="_blank" class="btn-ghost">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 4: GED ── -->
+                <div class="project-row flip" id="proj4">
+                    <span class="proj-index">04</span>
+                    <div class="proj-image-wrap">
+                        <img src="assets/images/ged.png" alt="Documentation Management System">
+                    </div>
+                    <div class="proj-content">
+                        <span class="proj-num">04</span>
+                        <h2 class="proj-title">Documentation Management System</h2>
+                        <p class="proj-desc">An enterprise-grade document management system built for Sonatrach. Handles document classification, codification, archiving, digital signatures, advanced search, and audit trails — designed to streamline large-scale corporate documentation workflows.</p>
+                        <div class="proj-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Spring Boot</span>
+                            <span class="proj-tag">PostgreSQL</span>
+                        </div>
+                        <div class="proj-actions">
+                            <button class="btn-view" id="openBtn1">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="https://github.com/MariaNihad/pfe-project.git" target="_blank" class="btn-ghost">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 5: My Portfolio ── -->
+                <div class="project-row flip" id="proj5">
+                    <span class="proj-index">05</span>
+                    <div class="proj-image-wrap">
+                        <img src="assets/images/portfolio.png" alt="My Portfolio">
+                    </div>
+                    <div class="proj-content">
+                        <span class="proj-num">05</span>
+                        <h2 class="proj-title">My Portfolio</h2>
+                        <p class="proj-desc">A personal portfolio built entirely with React, showcasing my projects, skills, and experience as a full-stack developer. Focused on smooth interactions, responsive layout, and a clean, modern aesthetic.</p>
+                        <div class="proj-tags">
+                            <span class="proj-tag">React</span>
+                        </div>
+                        <div class="proj-actions">
+                            <button class="btn-view" id="openBtn5">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="https://github.com/hanane-rh/portfolio.git" target="_blank" class="btn-ghost">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta" id="heroCta">
+                    <a href="contact.html" class="btn-text-link">
+                        Let's Connect <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         MODAL 1 — GED
+    ══════════════════════════════ -->
+    <div class="modal-overlay" id="modal1">
+        <div class="modal-box" id="modalBox1">
+
+            <div class="modal-close-bar">
+                <button class="modal-close-btn" id="closeBtn1"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-head">
+                <p class="modal-head-label">Project · 01</p>
+                <h2>GED — Documentation Management System</h2>
+                <div class="modal-head-tags">
+                    <span>Spring Boot</span><span>React</span><span>PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-body">
+
+                <!-- Client -->
+                <div>
+                    <p class="modal-section-title">Client</p>
+                    <p class="modal-desc">
+                        <strong>Sonatrach</strong> — Built as a final-year thesis project (Mémoire de Fin d'Études) for one of Algeria's largest enterprises.
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div>
+                    <p class="modal-section-title">Overview</p>
+                    <p class="modal-desc">
+                        An enterprise document management system (GED) designed to handle the full documentation lifecycle within a large corporation like Sonatrach. The system provides document classification, codification, archiving, digital signature workflows, advanced search capabilities, audit trails, and traceability — ensuring structured, secure, and compliant document management across departments.
+                    </p>
+                </div>
+
+                <!-- Actors -->
+                <div>
+                    <p class="modal-section-title">System Actors</p>
+                    <p class="modal-desc">
+                        The system involves three main actors: the <strong>Admin</strong> who manages users and global configuration; the <strong>External Client</strong> (a company or individual seeking to collaborate with Sonatrach); and the <strong>DCD</strong> (an intermediary between external clients and the enterprise), as well as the <strong>Department Head</strong> who oversees document workflows within their unit.
+                    </p>
+                </div>
+
+                <!-- Role & Team -->
+                <div>
+                    <p class="modal-section-title">My Role & Team</p>
+                    <div class="role-team-card">
+
+                        <div class="role-block">
+                            <span class="role-block-label">My Role</span>
+                            <span class="role-block-value">Full Stack Developer (Backend + Frontend)</span>
+                            <span class="role-block-desc">I contributed to both backend development with Spring Boot and frontend implementation with React — covering API design, authentication, document workflows, and UI integration.</span>
+                        </div>
+
+                        <div class="role-divider-h"></div>
+
+                        <div class="role-block">
+                            <span class="role-block-label">Team Members</span>
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <div class="team-avatar">H</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Rahali Hanane</span>
+                                        <span class="team-role-tag">Full Stack Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">Y</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Souileh Yasmine</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">M</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Rahmi Maria</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">I</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Boudjlel Ikram</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <p class="modal-section-title">Key Features</p>
+                    <ul class="feat-list">
+                        <li><strong>Document Classification —</strong> Structured categorisation and codification of all documents.</li>
+                        <li><strong>Archiving —</strong> Secure long-term storage with version control and traceability.</li>
+                        <li><strong>Digital Signatures —</strong> Multi-step signature workflows with role-based approval chains.</li>
+                        <li><strong>Advanced Search —</strong> Full-text search with filters by category, date, actor, and status.</li>
+                        <li><strong>Audit Trail —</strong> Complete history of document actions for compliance and accountability.</li>
+                        <li><strong>Multi-Actor Access —</strong> Role-based interfaces for Admin, External Client, DCD, and Department Head.</li>
+                    </ul>
+                </div>
+
+                <!-- Screenshots -->
+                <div>
+                    <p class="modal-section-title">Screenshots</p>
+                    <div class="modal-gallery">
+                        <div class="gallery-item">
+                            <p class="gallery-caption">External client interface</p>
+                            <img src="assets/images/ged_admin_users.png" alt="External client interface">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">External client document view & Login</p>
+                            <img src="assets/images/ged_client_externe_document.png" alt="Client document view">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Department Head interface</p>
+                            <img src="assets/images/ged_chef_departement.png" alt="Department Head">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">DCD interface</p>
+                            <img src="assets/images/ged_dcd.png" alt="DCD interface">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Profile page</p>
+                            <img src="assets/images/ged_profile.png" alt="Profile">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Login page</p>
+                            <img src="assets/images/ged_login.png" alt="Login">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Sign up page</p>
+                            <img src="assets/images/ged_sign_up.png" alt="Sign up">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-foot">
+                <a href="https://github.com/MariaNihad/pfe-project.git" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         MODAL 2 — Hotel Desk
+    ══════════════════════════════ -->
+    <div class="modal-overlay" id="modal2">
+        <div class="modal-box" id="modalBox2">
+
+            <div class="modal-close-bar">
+                <button class="modal-close-btn" id="closeBtn2"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-head">
+                <p class="modal-head-label">Project · 02</p>
+                <h2>Hotel Desk</h2>
+                <div class="modal-head-tags">
+                    <span>React</span><span>Prisma</span><span>PostgreSQL</span><span>NestJS</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-body">
+
+                <!-- Client -->
+                <div>
+                    <p class="modal-section-title">Context</p>
+                    <p class="modal-desc">
+                        <strong>Microclub</strong> — Built and presented during a <em>Build It</em> event organised by Microclub.
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div>
+                    <p class="modal-section-title">Overview</p>
+                    <p class="modal-desc">
+                        Hotel Desk is a hotel management system designed specifically to demonstrate the full capabilities of Prisma ORM. It covers room availability tracking, guest reservations, check-in/check-out workflows, billing, and admin dashboards — built with a clean, efficient architecture that puts Prisma's relational data handling front and center.
+                    </p>
+                </div>
+
+                <!-- Role & Team -->
+                <div>
+                    <p class="modal-section-title">My Role & Team</p>
+                    <div class="role-team-card">
+
+                        <div class="role-block">
+                            <span class="role-block-label">My Role</span>
+                            <span class="role-block-value">Backend Developer</span>
+                            <span class="role-block-desc">I led the backend development — database architecture with Prisma + PostgreSQL + NestJS, REST API design.</span>
+                        </div>
+
+                        <div class="role-divider-h"></div>
+
+                        <div class="role-block">
+                            <span class="role-block-label">Team Members</span>
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <div class="team-avatar">H</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Rahali Hanane</span>
+                                        <span class="team-role-tag">Backend Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">L</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Lyna Chihab</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">N</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Nahla Khattoui</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">B</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Boucenna Chiraz</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">K</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Khadjidja Daouidi</span>
+                                        <span class="team-role-tag">Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <p class="modal-section-title">Key Features</p>
+                    <ul class="feat-list">
+                        <li><strong>Reservation System —</strong> Create, update and cancel bookings with real-time availability checks.</li>
+                        <li><strong>Room Management —</strong> Track room status, type and pricing across the full property.</li>
+                        <li><strong>Secure Auth —</strong> JWT-based authentication with role-based access control for staff levels.</li>
+                        <li><strong>Prisma ORM —</strong> Fully normalised PostgreSQL schema managed through Prisma for reliable, type-safe data handling.</li>
+                        <li><strong>Billing —</strong> Automated invoice generation and billing management.</li>
+                    </ul>
+                </div>
+
+                <!-- Screenshots -->
+                <div>
+                    <p class="modal-section-title">Screenshots</p>
+                    <div class="modal-gallery">
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Sign in</p>
+                            <img src="assets/images/hotel_sign_in.png" alt="Sign in">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Sign up</p>
+                            <img src="assets/images/hotel_sign_up.png" alt="Sign up">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Room selection</p>
+                            <img src="assets/images/hotel_choseYourRoom.png" alt="Room selection">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Admin dashboard</p>
+                            <img src="assets/images/hotel_admin_dashboard.png" alt="Admin dashboard">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Reservation management</p>
+                            <img src="assets/images/hotel_admin_reservation.png" alt="Reservations">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Room management</p>
+                            <img src="assets/images/hotel_admin_rooms.png" alt="Rooms">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Billing</p>
+                            <img src="assets/images/hotel_admin_billing.png" alt="Billing">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-foot">
+                <a href="https://github.com/nahla-k/Hotel-management-system.git" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         MODAL 3 — Biblioteka
+    ══════════════════════════════ -->
+    <div class="modal-overlay" id="modal3">
+        <div class="modal-box" id="modalBox3">
+
+            <div class="modal-close-bar">
+                <button class="modal-close-btn" id="closeBtn3"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-head">
+                <p class="modal-head-label">Project · 03</p>
+                <h2>Biblioteka</h2>
+                <div class="modal-head-tags">
+                    <span>Django</span><span>React</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-body">
+
+                <!-- Client -->
+                <div>
+                    <p class="modal-section-title">Context</p>
+                    <p class="modal-desc">
+                        Built as part of an <strong>internal web development challenge</strong>.
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div>
+                    <p class="modal-section-title">Overview</p>
+                    <p class="modal-desc">
+                        Biblioteka is an online bookstore offering a clean, intuitive shopping experience for book lovers. Users can browse a rich catalogue, search and filter by category, add books to their cart, choose between in-store pickup or home delivery, and pay via multiple methods. The backend is powered by Django REST Framework for secure authentication and order management, consumed by a React frontend.
+                    </p>
+                </div>
+
+                <!-- Role & Team -->
+                <div>
+                    <p class="modal-section-title">My Role & Team</p>
+                    <div class="role-team-card">
+
+                        <div class="role-block">
+                            <span class="role-block-label">My Role</span>
+                            <span class="role-block-value">Backend Developer (100%)</span>
+                            <span class="role-block-desc">I was solely responsible for the entire backend: user authentication (JWT), payment integration, delivery system, order management, and the REST API consumed by the frontend.</span>
+                        </div>
+
+                        <div class="role-divider-h"></div>
+
+                        <div class="role-block">
+                            <span class="role-block-label">Team Members</span>
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <div class="team-avatar">H</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Rahali Hanane</span>
+                                        <span class="team-role-tag">Backend Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">Y</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Souileh Yasmine</span>
+                                        <span class="team-role-tag">Frontend Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <p class="modal-section-title">Key Features</p>
+                    <ul class="feat-list">
+                        <li><strong>Book Catalogue —</strong> Browse a large collection with search and category filtering.</li>
+                        <li><strong>Shopping Cart —</strong> Smooth cart management with real-time price calculations.</li>
+                        <li><strong>Multiple Payment Options —</strong> Credit card, digital wallet, and cash on delivery.</li>
+                        <li><strong>Delivery & Pickup —</strong> Choose between home delivery or in-store collection.</li>
+                        <li><strong>User Accounts —</strong> Secure registration, login, order history, and wishlist management.</li>
+                        <li><strong>Order Tracking —</strong> Real-time delivery status updates for customers.</li>
+                    </ul>
+                </div>
+
+                <!-- Screenshots -->
+                <div>
+                    <p class="modal-section-title">Screenshots</p>
+                    <div class="modal-gallery">
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Book catalogue — browse and discover</p>
+                            <img src="assets/images/biblioteka_all_books.png" alt="Book catalogue">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Book description</p>
+                            <img src="assets/images/biblioteka_discription_book.png" alt="Book description">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Login</p>
+                            <img src="assets/images/biblioteka_login.png" alt="Login">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Sign up</p>
+                            <img src="assets/images/bibloteka_sign_up.png" alt="Sign up">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Search by category</p>
+                            <img src="assets/images/biblioteka_recherche_by_category.png" alt="Category search">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Payment</p>
+                            <img src="assets/images/bibiloteka_paiment.png" alt="Payment">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-foot">
+                <a href="https://github.com/hanane-rh/shopProjet.git" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         MODAL 4 — Vio
+    ══════════════════════════════ -->
+    <div class="modal-overlay" id="modal4">
+        <div class="modal-box" id="modalBox4">
+
+            <div class="modal-close-bar">
+                <button class="modal-close-btn" id="closeBtn4"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-head">
+                <p class="modal-head-label">Project · 04</p>
+                <h2>Vio</h2>
+                <div class="modal-head-tags">
+                    <span>Django</span><span>React</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-body">
+
+                <!-- Client -->
+                <div>
+                    <p class="modal-section-title">Context</p>
+                    <p class="modal-desc">
+                        <strong>OpenMinds Club</strong> — Developed and presented during the <em>Pixels</em> event organised by OpenMinds Club.
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div>
+                    <p class="modal-section-title">Overview</p>
+                    <p class="modal-desc">
+                        Vio is a long-term health tracking application designed to help users manage chronic conditions over time. It combines gamification mechanics with daily task management and motivational reminders to make health monitoring engaging and sustainable. Users build routines, track progress, receive motivational notifications, and are rewarded for consistency — turning health management into a habit.
+                    </p>
+                </div>
+
+                <!-- Role & Team -->
+                <div>
+                    <p class="modal-section-title">My Role & Team</p>
+                    <div class="role-team-card">
+
+                        <div class="role-block">
+                            <span class="role-block-label">My Role</span>
+                            <span class="role-block-value">Full Stack Developer (Backend 100% + Frontend 50%)</span>
+                            <span class="role-block-desc">I was solely responsible for the entire Django backend — API design, authentication, data models, and business logic — while also contributing to half of the React frontend implementation.</span>
+                        </div>
+
+                        <div class="role-divider-h"></div>
+
+                        <div class="role-block">
+                            <span class="role-block-label">Team Members</span>
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <div class="team-avatar">H</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Rahali Hanane</span>
+                                        <span class="team-role-tag">Full Stack Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">S</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Djaoud Sara</span>
+                                        <span class="team-role-tag">Frontend Developer</span>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-avatar">N</div>
+                                    <div class="team-info">
+                                        <span class="team-name">Boumahra Nada</span>
+                                        <span class="team-role-tag">Frontend Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <p class="modal-section-title">Key Features</p>
+                    <ul class="feat-list">
+                        <li><strong>Long-Term Health Tracking —</strong> Monitor chronic conditions over time with structured data logging.</li>
+                        <li><strong>Gamification —</strong> Earn rewards and progress through levels for consistent healthy habits.</li>
+                        <li><strong>Daily Tasks & Routines —</strong> Set and complete personalised health routines each day.</li>
+                        <li><strong>Motivational Reminders —</strong> Smart notifications that keep users engaged and on track.</li>
+                        <li><strong>Progress Visualisation —</strong> Clear dashboards to track trends and improvements over time.</li>
+                    </ul>
+                </div>
+
+                <!-- Screenshots -->
+                <div>
+                    <p class="modal-section-title">Screenshots</p>
+                    <div class="modal-gallery">
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Personalise your experience</p>
+                            <img src="assets/images/vio_peronlise_yr_experience.png" alt="Personalise experience">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Daily routines</p>
+                            <img src="assets/images/vio_routines.png" alt="Routines">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Future self dialogue</p>
+                            <img src="assets/images/vio_futur_self_dialogue.png" alt="Future self">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Characters & gamification</p>
+                            <img src="assets/images/vio_caracters.png" alt="Characters">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Breathing exercises</p>
+                            <img src="assets/images/vio_breathing.png" alt="Breathing">
+                        </div>
+                        <div class="gallery-item">
+                            <p class="gallery-caption">Stars & rewards</p>
+                            <img src="assets/images/vio_stars.png" alt="Stars">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-foot">
+                <a href="https://github.com/hanane-rh/vio.git" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         MODAL 5 — My Portfolio
+    ══════════════════════════════ -->
+    <div class="modal-overlay" id="modal5">
+        <div class="modal-box" id="modalBox5">
+
+            <div class="modal-close-bar">
+                <button class="modal-close-btn" id="closeBtn5"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-head">
+                <p class="modal-head-label">Project · 05</p>
+                <h2>My Portfolio</h2>
+                <div class="modal-head-tags">
+                    <span>React</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-body">
+
+                <!-- Overview -->
+                <div>
+                    <p class="modal-section-title">Overview</p>
+                    <p class="modal-desc">
+                        A personal portfolio website designed and developed entirely by me to showcase my projects, skills, and experience as a full-stack developer. Built with React, it features smooth page transitions, responsive layouts, interactive project modals, and a clean modern aesthetic — reflecting both my technical ability and my eye for design.
+                    </p>
+                </div>
+
+                <!-- Role & Team -->
+                <div>
+                    <p class="modal-section-title">My Role</p>
+                    <div class="role-team-card">
+
+                        <div class="role-block">
+                            <span class="role-block-label">My Role</span>
+                            <span class="role-block-value">Solo Developer & Designer</span>
+                            <span class="role-block-desc">I handled everything — from design and UX decisions to React component architecture, animations, and responsive styling. This project is a full expression of my work as a developer.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <p class="modal-section-title">Key Features</p>
+                    <ul class="feat-list">
+                        <li><strong>Responsive Design —</strong> Fully adaptive layout that works seamlessly on all screen sizes.</li>
+                        <li><strong>Project Showcase —</strong> Detailed project cards with interactive modals and screenshot galleries.</li>
+                        <li><strong>Smooth Animations —</strong> Carefully crafted transitions and scroll effects for a polished feel.</li>
+                        <li><strong>Clean Architecture —</strong> Well-structured React components for easy maintenance and updates.</li>
+                        <li><strong>Contact Integration —</strong> Direct contact form for professional inquiries.</li>
+                    </ul>
+                </div>
+
+                <!-- Screenshots -->
+               
+
+            </div>
+
+            <div class="modal-foot">
+                <a href="https://github.com/hanane-rh/portfolio.git" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/project.js"></script>
+
+</body>
+</html>
