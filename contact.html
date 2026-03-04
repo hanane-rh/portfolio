@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Hanane</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -22,43 +23,37 @@
 <body>
 
     <!-- SIDEBAR -->
-    <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-mini">
             <a href="home.html" class="mini-icon">
                 <i class="fas fa-home"></i>
                 <span class="tooltip">HOME</span>
             </a>
-            <a href="about.html" class="mini-icon active">
+            <a href="about.html" class="mini-icon">
                 <i class="fas fa-user"></i>
                 <span class="tooltip">ABOUT</span>
             </a>
-             <a href="projects.html" class="mini-icon">
+            <a href="projects.html" class="mini-icon">
                 <i class="fas fa-briefcase"></i>
                 <span class="tooltip">PROJECTS</span>
             </a>
-            <a href="contact.html" class="mini-icon">
+            <a href="contact.html" class="mini-icon active">
                 <i class="fas fa-envelope"></i>
                 <span class="tooltip">CONTACT</span>
             </a>
         </div>
 
-         <div class="sidebar-card">
-             <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+        <div class="sidebar-card">
+            <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
             <p class="subtitle">Software Engineering</p>
             <h2>Rahali Hanane</h2>
             <div class="social-icons">
-                <!-- ✏️ Replace YOUR-USERNAME with your LinkedIn username -->
-                <a href="https://www.linkedin.com/in/hanane-rahali" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <!-- ✏️ Replace YOUR-USERNAME with your Instagram username -->
+                <a href="https://www.linkedin.com/in/hanane-rahali-007963305" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/ha.nane.rahali" target="_blank"><i class="fab fa-instagram"></i></a>
-                <!-- ✏️ Replace YOUR-USERNAME with your GitHub username -->
                 <a href="https://github.com/hanane-rh" target="_blank"><i class="fab fa-github"></i></a>
-               
             </div>
             <div class="card-buttons">
-                <!-- ✏️ Put your CV PDF in assets/cv/ and replace the filename below -->
-                <a href="https://drive.google.com/file/d/1fJXOmeeDNp6Z4bnORJCHUa7g5O-v3Ftn/view" target="_blank" class="btn-primary">Download CV</a>
+                <a href="assets/cv/hanane-rahali-cv.pdf" target="_blank" class="btn-primary">Download CV</a>
                 <a href="contact.html" class="btn-secondary">Contact Me</a>
             </div>
         </div>
@@ -84,11 +79,11 @@
                 <!-- LEFT: contact info -->
                 <div class="contact-info will-reveal" id="ctInfo">
 
-                    <a href="mailto:rahalihanane67@gmail.com" class="info-card">
+                    <a href="/cdn-cgi/l/email-protection#1d6f7c757c7174757c737c73782b2a5d7a707c7471337e7270" class="info-card">
                         <div class="info-icon"><i class="fas fa-envelope"></i></div>
                         <div class="info-text">
                             <span class="info-label">Email</span>
-                            <span class="info-value">rahalihanane67@gmail.com</span>
+                            <span class="info-value"><span class="__cf_email__" data-cfemail="2c5e4d444d4045444d424d42491a1b6c4b414d4540024f4341">[email&#160;protected]</span></span>
                         </div>
                     </a>
 
@@ -197,7 +192,7 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
     <script>
         // Character counter
         function updateCount(el) {
@@ -215,7 +210,7 @@
             btn.innerHTML = 'Sending… <i class="fas fa-spinner fa-spin"></i>';
 
             try {
-                const response = await fetch('/', {
+                const response = await fetch('/contact.html', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: new URLSearchParams(new FormData(form)).toString()
@@ -230,11 +225,4 @@
                     throw new Error('Server error');
                 }
             } catch (err) {
-                btn.disabled = false;
-                btn.innerHTML = 'Send Message <i class="fas fa-arrow-right"></i>';
-                alert('Something went wrong. Please email me directly at rahalihanane67@gmail.com');
-            }
-        }
-    </script>
-</body>
-</html>
+                btn.dis
