@@ -462,28 +462,59 @@
 .visible { opacity: 1 !important; }
 
 /* ============================================
-   RESPONSIVE
+   MOBILE APP SCREENSHOT GALLERY
+   (horizontal scrolling phone row)
 ============================================ */
-/* Stack project rows on narrow content area */
-@media (max-width: 760px) {
-    .project-row {
-        grid-template-columns: 1fr;
-        gap: 1.6rem;
-        padding: 2rem 0;
-    }
-    .project-row.flip { direction: ltr; }
-    .proj-index { display: none; }
-    .page-header { margin-bottom: 2rem; }
+.modal-gallery.mobile-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* space between images */
+    overflow-x: auto;
+    padding: 0.8rem 1rem; /* top/bottom 0.8rem, left/right 1rem */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(102,49,88,0.4) transparent;
 }
 
-/* Modal responsive */
-@media (max-width: 600px) {
-    .modal-overlay { padding: 0.8rem; }
-    .modal-box { border-radius: 14px; }
-    .modal-head,
-    .modal-body,
-    .modal-foot { padding-left: 1.2rem; padding-right: 1.2rem; }
-    .modal-head { padding-bottom: 1.2rem; }
-    .modal-body { padding-top: 1.2rem; }
-    .gallery-pair { grid-template-columns: 1fr; }
+.modal-gallery.mobile-grid::-webkit-scrollbar { 
+    height: 3px; 
+}
+
+.modal-gallery.mobile-grid::-webkit-scrollbar-thumb {
+    background: rgba(102,49,88,0.4);
+    border-radius: 4px;
+}
+
+.modal-gallery.mobile-grid .gallery-item {
+    flex: 0 0 auto; /* auto width so padding works */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    /* Optional: add a “card frame” effect */
+    padding: 6px; /* inner spacing inside the frame */
+    background: rgba(255, 255, 255, 0.05); /* subtle frame background */
+    border-radius: 18px; 
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-gallery.mobile-grid .gallery-item img {
+    width: 200px;
+    aspect-ratio: 9/19;
+    object-fit: cover;
+    border-radius: 14px; /* smaller than the card frame to show border */
+    display: block;
+}
+
+.modal-gallery.mobile-grid .gallery-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.55);
+}
+
+.modal-gallery.mobile-grid .gallery-caption {
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.22);
+    text-align: center;
+    letter-spacing: 0.4px;
 }

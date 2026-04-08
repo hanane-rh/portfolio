@@ -17,7 +17,7 @@
 
 /* ══ MODAL LOGIC ══ */
 (function () {
-    const MODAL_IDS = ['modal1', 'modal2', 'modal3', 'modal4', 'modal5'];
+    const MODAL_IDS = ['modal1', 'modal2', 'modal3', 'modal4', 'modal5', 'modal6'];
 
     function openProjectModal(id) {
         const el = document.getElementById(id);
